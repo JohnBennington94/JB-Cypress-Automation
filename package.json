@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "An example Cypress e2e test project",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/JohnBennington94/JB-Cypress-Automation.git"
+  },
   "scripts": {
     "cy": "./node_modules/.bin/cypress",
     "cy:open": "npm run cy open",

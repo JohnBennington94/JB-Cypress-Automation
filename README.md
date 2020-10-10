@@ -17,6 +17,8 @@ An example project using the automation tool, [Cypress](https://www.cypress.io/)
 4. open cypress and manually kick off specs: `npm run cy:open`
 5. In Docker (example here is headless chrome) `docker-compose up --exit-code-from cypress` (default entrypoint to run headless tests - specify different endpoint to run cypress in interactive mode "entrypoint: cypress open --project /e2e")
 
+Note: You can add `--spec 'specs/*.spec.js'` argument to run certain specs using global patterns
+
 ## Output of tests (in project folder)
 * Videos - cypress/videos
 * Screenshots - screenshots

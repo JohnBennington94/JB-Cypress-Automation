@@ -13,3 +13,4 @@ An example project using the automation tool, [Cypress](https://www.cypress.io/)
 ## Run Tests
 1. all'vum: `npm test`
 2. headless: `npm run cy:headless`
+3. open cypress and manually kick off specs: `npm run cy:open`

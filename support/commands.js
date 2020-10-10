@@ -23,3 +23,7 @@
 //
 // -- This is will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
+
+beforeEach(() => {
+    cy.log('Example of support code running before every test begins')
+})

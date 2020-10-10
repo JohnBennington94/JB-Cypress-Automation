@@ -15,7 +15,8 @@ describe('Checking list of products', () => {
     inventoryPage.inventoryItems().should('have.length.at.least', 1)
   })
 
-  it('should show add to cart buttons on the products page', () => {
+  //Below example will not run if the browser is chrome - conditional skip, can also be added to describe
+  it('should show add to cart buttons on the products page', { browser: '!chrome' }, () => {
     inventoryPage.addToCartButton().should('have.length.at.least', 1)
   })
 

@@ -19,6 +19,11 @@ An example project using the automation tool, [Cypress](https://www.cypress.io/)
 
 Note: You can add `--spec 'specs/*.spec.js'` argument to run certain specs using global patterns
 
+To see Cypress debugging capabilities in action run #4 (see https://docs.cypress.io/guides/overview/why-cypress.html)
+* This opens cypress GUI and allows a spec run to be kicked off 
+* The window will not auto close on completion
+* You can then highlight each test step in the left pane and see how the test ran each statement
+
 ## Output of tests (in project folder)
 * Videos - cypress/videos
 * Screenshots - screenshots

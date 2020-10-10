@@ -10,7 +10,13 @@ An example project using the automation tool, [Cypress](https://www.cypress.io/)
 1. clone: `https://github.com/JohnBennington94/JB-Cypress-Automation.git`
 2. install npm dependencies from project directory: `npm i`
 
-## Run Tests
-1. all'vum: `npm test`
-2. headless: `npm run cy:headless`
-3. open cypress and manually kick off specs: `npm run cy:open`
+## Run Tests Options (see package.json)
+1. all tests(electron browser): `npm test`
+2. headed on chrome: `npm run chromeTest`
+3. headless: `npm run cy:headless`
+4. open cypress and manually kick off specs: `npm run cy:open`
+5. In Docker (example here is headless chrome) `docker-compose up --exit-code-from cypress` (default entrypoint to run headless tests - specify different endpoint to run cypress in interactive mode "entrypoint: cypress open --project /e2e")
+
+## Output of tests (in project folder)
+* Videos - cypress/videos
+* Screenshots - screenshots

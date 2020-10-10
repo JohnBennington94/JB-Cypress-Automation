@@ -11,6 +11,7 @@
     "cy": "./node_modules/.bin/cypress",
     "cy:open": "npm run cy open",
     "test": "npm run cy run -- -q --headed",
+    "chromeTest": "npm run cy run  -- -q --browser chrome --headed",
     "cy:headless": "npm run cy run -- -q",
     "ci": "npm run cy run -- -q"
   },

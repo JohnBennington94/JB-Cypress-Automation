@@ -1,0 +1,15 @@
+version: '3.2'
+services:
+  
+  # Cypress container
+  cypress:
+    # the Docker image to use from https://github.com/cypress-io/cypress-docker-images
+    image: "cypress/included:5.3.0"
+    command: "--browser chrome --headless"
+    environment:
+      # pass base url to test pointing at the web application
+      - CYPRESS_baseUrl=https://www.saucedemo.com
+    # share the current folder as volume to avoid copying
+    working_dir: /e2e
+    volumes:
+      - ./:/e2e

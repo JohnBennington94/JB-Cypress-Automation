@@ -9,12 +9,14 @@ const loginPage = {
 
   populateUsernameInput(username) {
     cy.get(this.usernameInput)
-      .click().type(username)
+      .click()
+      .type(username)
   },
 
   populatePasswordInput(password) {
     cy.get(this.passwordInput)
-      .click().type(password)
+      .click()
+      .type(password)
   },
 
   submitLoginForm(){

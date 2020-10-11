@@ -5,6 +5,7 @@ services:
   cypress:
     # the Docker image to use from https://github.com/cypress-io/cypress-docker-images
     image: "cypress/included:5.3.0"
+    ipc: host
     # Default command for image is 'cypress run', so extra args just configure that command further
     command: "--browser chrome --headless"
     environment:
